@@ -1,0 +1,202 @@
+@font-face {
+  font-family: outfit;
+  src: url(./Outfit-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: youngserif;
+  src: url(./YoungSerif-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* ---------- Card ---------- */
+.container {
+  display: grid;
+  gap: 32px;
+  max-width: 736px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* On mobile the image goes edge to edge
+, the rest is padded */
+.container > *:not(.image) {
+  margin-inline: 24px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Text ---------- */
+.head {
+  font-family: youngserif, serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: hsl(24, 5%, 18%);
+}
+
+.headers {
+  font-family: youngserif, serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  color: hsl(14, 45%, 36%);
+}
+
+.firstdiv,
+.para {
+  line-height: 1.5;
+}
+
+/* ---------- Preparation time box ---------- */
+.prepdiv {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.will {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+}
+
+.willi {
+  padding-left: 24px;
+}
+
+.willi li {
+  padding-left: 16px;
+}
+
+.willi li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.willi li + li {
+  margin-top: 8px;
+}
+
+.jane {
+  font-weight: 600;
+}
+
+/* ---------- Ingredients and instructions ---------- */
+.in {
+  margin-bottom: 20px;
+}
+
+.inlist,
+.tucklist {
+  padding-left: 24px;
+}
+
+.inlist li,
+.tucklist li {
+  padding-left: 16px;
+}
+
+.inlist li + li,
+.tucklist li + li {
+  margin-top: 8px;
+}
+
+.inlist li::marker,
+.tucklist li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.instruction .headers {
+  margin-bottom: 20px;
+}
+
+.tucklist li + li {
+  margin-top: 12px;
+}
+
+/* ---------- Divider ---------- */
+hr {
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+/* ---------- Nutrition table ---------- */
+.container > div:has(table) .headers {
+  margin-bottom: 20px;
+}
+
+.container > div:has(table) .para {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px 0 12px 32px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.tab {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+/* ---------- Footer ---------- */
+.attribution {
+  margin-top: 8px;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 768px) {
+  body {
+    padding: 120px 24px;
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .container {
+    padding: 40px;
+    border-radius: 24px;
+    gap: 40px;
+  }
+
+  .container > *:not(.image) {
+    margin-inline: 0;
+  }
+
+  .image {
+    border-radius: 12px;
+  }
+
+  .head {
+    font-size: 2.5rem;
+  }
+}
