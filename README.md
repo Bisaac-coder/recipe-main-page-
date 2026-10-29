@@ -29,8 +29,8 @@ mentor coding challenge.
 
 ### Links
 
-- Solution URL: [Bisaac coder](https://your-solution-url.com)
-- Live Site URL: [recipe live site](https://your-live-site-url.com)
+- Solution URL: [Bisaac coder](https://github.com/Bisaac-coder/recipe-main-page-)
+- Live Site URL: [recipe live site](https://bisaac-coder.github.io/recipe-main-page-/)
 
 ## My process
 well i struggled for more than
